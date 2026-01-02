@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini to Obsidian",
+  "version": "1.0",
+  "description": "Save Gemini conversations to Obsidian Vault",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://gemini.google.com/*"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Save to Obsidian"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["src/content/content.js"]
+    }
+  ]
+}

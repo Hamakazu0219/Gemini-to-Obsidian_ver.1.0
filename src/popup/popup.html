@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Gemini to Obsidian</h2>
+    
+    <div class="input-group">
+      <label for="vaultName">Vault Name</label>
+      <input type="text" id="vaultName" placeholder="e.g. MyVault">
+    </div>
+
+    <div class="input-group">
+      <label for="folderPath">Folder Path (Optional)</label>
+      <input type="text" id="folderPath" placeholder="e.g. Gemini/Exports">
+    </div>
+
+    <button id="saveToObsidian" class="primary-btn">Save to Obsidian</button>
+    <div id="status" class="status-msg"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
